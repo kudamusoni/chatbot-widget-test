@@ -24,7 +24,7 @@ Then visit `http://localhost:8080`.
 ## Widget integration
 The widget embed script is included on every page:
 
-- `src="https://95.216.145.213.nip.io/widget.js"`
+- `src="https://widget.95.216.145.213.nip.io/embed.js"`
 - `data-client-id="019cce55-bbe7-713a-aeb0-c2ad505ef931"`
 - `data-widget-security-version="1"`
 
