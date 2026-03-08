@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ensure index exists
+        run: test -f index.html
+      - name: Ensure embed script exists
+        run: grep -q "widget.95.216.145.213.nip.io/embed.js" index.html
