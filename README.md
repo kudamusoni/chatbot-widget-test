@@ -27,8 +27,8 @@ The widget embed script is included on every page:
 - `src="https://widget.95.216.145.213.nip.io/embed.js"`
 - `data-auto-init`
 - `data-client-id="019cce55-bbe7-713a-aeb0-c2ad505ef931"`
-- `data-api-url="https://widget.95.216.145.213.nip.io"`
-- `data-widget-security-version="1"`
+- `data-api-url="https://95.216.145.213.nip.io"`
+- `data-widget-security-version="2"`
 
 ## Quick QA checks
 1. Navigate every top-level page and confirm widget availability.
