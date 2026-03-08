@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Browse Auctions | Heritage Auctions & Antiques</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="index.html">Heritage Auctions & Antiques</a>
+      <nav aria-label="Primary"><ul class="nav-list">
+        <li><a data-nav class="nav-link" href="index.html">Home</a></li>
+        <li><a data-nav class="nav-link" href="browse-auctions.html">Browse Auctions</a></li>
+        <li><a data-nav class="nav-link" href="sell-an-item.html">Sell an Item</a></li>
+        <li><a data-nav class="nav-link" href="about.html">About Us</a></li>
+        <li><a data-nav class="nav-link" href="contact.html">Contact</a></li>
+        <li><a data-nav class="nav-link" href="visit-us.html">Visit Us</a></li>
+      </ul></nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-layout">
+      <section>
+        <h1>Browse Auctions</h1>
+        <p class="meta">Explore curated lots and ask our assistant if you need recommendations by era, style, or budget.</p>
+
+        <div class="filters" aria-label="Auction filters">
+          <label>Category
+            <select id="filter-category">
+              <option value="all">All categories</option>
+              <option value="timepiece">Timepieces</option>
+              <option value="lighting">Lighting</option>
+              <option value="sculpture">Sculpture</option>
+              <option value="furniture">Furniture</option>
+              <option value="textile">Textiles</option>
+            </select>
+          </label>
+          <label>Era
+            <select id="filter-era">
+              <option value="all">All eras</option>
+              <option value="victorian">Victorian</option>
+              <option value="edwardian">Edwardian</option>
+              <option value="artdeco">Art Deco</option>
+              <option value="midcentury">Mid Century</option>
+            </select>
+          </label>
+          <label>Price range
+            <select id="filter-price">
+              <option value="all">All values</option>
+              <option value="0-2000">Up to £2,000</option>
+              <option value="2001-8000">£2,001 - £8,000</option>
+              <option value="8001-20000">£8,001+</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="grid card-grid">
+          <article class="card" data-item-card data-category="timepiece" data-era="victorian" data-price="1800">
+            <img src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?auto=format&fit=crop&w=900&q=80" alt="Antique pocket watch" />
+            <div class="card-content">
+              <h3>Antique Pocket Watch</h3>
+              <p class="meta">Estimated value: £1,200 - £1,800</p>
+              <a class="btn btn-secondary" href="items/antique-pocket-watch.html">View Item</a>
+            </div>
+          </article>
+          <article class="card" data-item-card data-category="lighting" data-era="artdeco" data-price="3500">
+            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80" alt="Art deco lamp" />
+            <div class="card-content">
+              <h3>Art Deco Lamp</h3>
+              <p class="meta">Estimated value: £2,700 - £3,500</p>
+              <a class="btn btn-secondary" href="items/art-deco-lamp.html">View Item</a>
+            </div>
+          </article>
+          <article class="card" data-item-card data-category="sculpture" data-era="edwardian" data-price="6700">
+            <img src="https://images.unsplash.com/photo-1572947650440-e8a97ef053b2?auto=format&fit=crop&w=900&q=80" alt="Bronze sculpture" />
+            <div class="card-content">
+              <h3>Bronze Sculpture</h3>
+              <p class="meta">Estimated value: £5,500 - £6,700</p>
+              <a class="btn btn-secondary" href="items/bronze-sculpture.html">View Item</a>
+            </div>
+          </article>
+          <article class="card" data-item-card data-category="furniture" data-era="victorian" data-price="8200">
+            <img src="https://images.unsplash.com/photo-1582582494700-7842ab8f6d8b?auto=format&fit=crop&w=900&q=80" alt="Victorian writing desk" />
+            <div class="card-content">
+              <h3>Victorian Writing Desk</h3>
+              <p class="meta">Estimated value: £6,900 - £8,200</p>
+              <a class="btn btn-secondary" href="items/victorian-writing-desk.html">View Item</a>
+            </div>
+          </article>
+          <article class="card" data-item-card data-category="textile" data-era="midcentury" data-price="4800">
+            <img src="https://images.unsplash.com/photo-1616627454735-412bbf6e35e0?auto=format&fit=crop&w=900&q=80" alt="Persian carpet" />
+            <div class="card-content">
+              <h3>Persian Carpet</h3>
+              <p class="meta">Estimated value: £3,800 - £4,800</p>
+              <a class="btn btn-secondary" href="items/persian-carpet.html">View Item</a>
+            </div>
+          </article>
+          <article class="card" data-item-card data-category="timepiece" data-era="midcentury" data-price="14000">
+            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80" alt="Rolex vintage watch" />
+            <div class="card-content">
+              <h3>Rolex Vintage Watch</h3>
+              <p class="meta">Estimated value: £11,500 - £14,000</p>
+              <a class="btn btn-secondary" href="items/rolex-vintage-watch.html">View Item</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <h2>Need help finding lots?</h2>
+        <p>Looking for something specific? Ask our assistant and describe the era, maker, or material you are after.</p>
+        <p class="small">Example: “Show me Victorian silver under £5,000.”</p>
+      </aside>
+    </div>
+
+    <div class="container">
+      <section class="status-panel">
+        <strong>Staging:</strong> This is a chatbot widget testing site.<br />
+        <strong>Current URL:</strong> <span id="current-url">Loading...</span><br />
+        <strong>Timestamp:</strong> <span id="current-time">Loading...</span><br />
+        If widget does not appear, check allowed origins and bootstrap request.
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-links">
+        <a href="index.html">Home</a><a href="browse-auctions.html">Browse Auctions</a>
+        <a href="sell-an-item.html">Sell an Item</a><a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a><a href="visit-us.html">Visit Us</a>
+      </div>
+      <small>Have a question about this item list? Ask our assistant.</small>
+    </div>
+  </footer>
+
+  <script
+    src="https://widget.95.216.145.213.nip.io/embed.js"
+    defer
+    data-client-id="019cca96-f26e-71ff-a02f-c53438a2b106"
+    data-widget-security-version="1"></script>
+</body>
+</html>
