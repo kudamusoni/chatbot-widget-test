@@ -13,4 +13,4 @@ jobs:
       - name: Ensure index exists
         run: test -f index.html
       - name: Ensure embed script exists
-        run: grep -q "widget.95.216.145.213.nip.io/embed.js" index.html
+        run: grep -q "api.zivo.one/embed.js" index.html
