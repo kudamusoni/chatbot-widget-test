@@ -24,7 +24,7 @@ Then visit `http://localhost:8080`.
 ## Widget integration
 The widget embed script is included on every page:
 
-- `src="https://api.zivo.one/embed.js"`
+- `src="https://widget.zivo.one/embed.js"`
 - `data-auto-init`
 - `data-client-id="019cce55-bbe7-713a-aeb0-c2ad505ef931"`
 - `data-api-url="https://api.zivo.one"`
