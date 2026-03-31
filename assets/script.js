@@ -1,25 +1,4 @@
 (function () {
-  function initWidgetEmbed() {
-    var config = window.WIDGET_TEST_SITE_CONFIG || {};
-    var scriptSrc = config.scriptSrc || "https://widget.zivo.one/embed.js";
-    var clientId = config.clientId || "019cce55-bbe7-713a-aeb0-c2ad505ef931";
-    var apiUrl = config.apiUrl || "https://api.zivo.one";
-    var securityVersion = config.securityVersion || "2";
-    var existingScript = document.querySelector('script[data-widget-test-site-embed="true"]');
-
-    if (existingScript || !clientId) return;
-
-    var script = document.createElement("script");
-    script.src = scriptSrc;
-    script.defer = true;
-    script.setAttribute("data-auto-init", "");
-    script.setAttribute("data-client-id", clientId);
-    script.setAttribute("data-api-url", apiUrl);
-    script.setAttribute("data-widget-security-version", securityVersion);
-    script.setAttribute("data-widget-test-site-embed", "true");
-    document.body.appendChild(script);
-  }
-
   function markActiveNav() {
     var current = location.pathname.split('/').pop() || 'index.html';
     var inItemsDir = location.pathname.indexOf('/items/') !== -1;
@@ -79,7 +58,6 @@
     applyFilters();
   }
 
-  initWidgetEmbed();
   markActiveNav();
   fillStatusPanel();
   initFilters();
