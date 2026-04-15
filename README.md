@@ -26,9 +26,9 @@ The widget embed script is included on every page:
 
 - `src="https://widget.zivo.one/embed.js"`
 - `data-auto-init`
-- `data-client-id="019cce55-bbe7-713a-aeb0-c2ad505ef931"`
+- `data-client-id="019d8941-2727-708a-9dd6-847d70683818"`
 - `data-api-url="https://api.zivo.one"`
-- `data-widget-security-version="2"`
+- `data-widget-security-version="1"`
 
 ## Quick QA checks
 1. Navigate every top-level page and confirm widget availability.
